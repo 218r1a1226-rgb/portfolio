@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        </head>
+        <body>
+            <div id="header">
+            <div class="container">
+                <nav>
+                    <!--LOGO IMAGE--> 
+                    <h1 class="logo">
+                    <span class="first-letter">A</span>bhi<span>.</span></h1>
+                    <!--list menu-->
+                    <ul id="sidemenu"> 
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>FRONT END DEVELOPER</p>
+                    <h1>HI, I'm <span>Abhishek</span><br>From Hyderabad</h1>
+                </div>
+            </div>
+            </div>
+            <!-- about -->
+            <div id="about">
+                <div class="container">
+                <div class ="row">
+                    <div class="about-col-1">
+                        <img src="images/user_profile.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                          <p>Frontend Developer focused on clean design and interactive user experience.  Experienced in building responsive web projects using core technologies.  Motivated fresher ready to learn and contribute effectively.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab(event,'education')">Education </p>
+                            <p class="tab-links" onclick="opentab(event,'certifications')">Certifications </p>
+                        </div>
+                        <div class="tab-contents active-tab"  id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br> Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br> Designing Web/App interfaces</li>
+                                <li><span>App Development</span><br> Designing Web/App interfaces</li>
+                            </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                <li><span>2021 - 2025</span><br> CMR ENGINEERING COLLEGE(BTECH)</li>
+                                <li><span>2019 - 2021</span><br> SPR JUNIOR COLLEGE (12TH)</li>
+                                <li><span>2019</span><br>MILLENNIUM HIGH SCHOOL (CBSE) (10TH) </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="certifications">
+                            <ul>
+                               <li><span>2025- 2026</span><br> Python Full Stack Development -vtalent<br>
+                                 <a href="images/vtalent.pdf"target="blank">view certificate</a></li>
+                               <li><span>2025</span><br>Frontend Development Course - Simplelearn<br>
+                                <a href="images/Simplelearn (1).pdf" target="blank">view certificate</a></li>
+                               <li><span>2026</span><br>Python Training,Html traning,JavaScript Training-Spoken Tutorial,IIT Bombay<br>
+                            <a href="images/html,python,javascript-training.pdf" target="blank">view certificate</a></li>
+                               
+                              </ul>
+                                </div>
+                              
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!---------Projects------>
+       <div id ="projects">
+        <div class ="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2> Design Implentation Of Solar Power Monitoring System</h2>
+                    <P>Developed an IoT-based solar power monitoring system using Arduino and sensors to track real-time energy data.
+                       The system enables efficient monitoring, analysis, and optimization of solar energy usage.</P>
+                    <a href="images/Mini Project doc.pdf"target="_blank">View Documentation</a>
+                </div>
+                <div>
+                    <h2> A Double Layerred Hybrid Approach For Detetcting Network Intrusions</h2>
+                    <P>Built a hybrid machine learning-based intrusion detection system to identify cyber attacks in network traffic.
+                       Utilized Naïve Bayes and SVM models to achieve high accuracy and detect both common and rare threats.</P>
+                    <a href="images/Major Project doc.pdf.pdf"target="_blank">View Documentation</a>
+                </div>
+        </div>
+       </div>
+   
+
+        </div>
+    </div>
+    <!--------------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>abhijakkula19@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6303324774</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/218r1a1226-rgb"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jakkula-abhishek01/"><i class="fa-brands fa-linkedin-in"></i></a>
+                              <a href="https://wa.me/916303324774?text=Hello%20Abhishek"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <a href="" download class="btn btn-cv">Download CV</a>
+                </div>
+                        
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+       
+
+       </body>
+
+
+
+
+
+
+        <script>
+             var tablinks = document.getElementsByClassName("tab-links");
+             var tabcontents = document.getElementsByClassName("tab-contents");
+
+             function opentab(event,tabname){
+                for(let tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(let tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+             }
+             
+
+        </script>
+        <script>
+let sidemenu = document.querySelector("nav ul");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+</script>
+
+        </body>
+
+</html>
